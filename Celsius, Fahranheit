@@ -1,0 +1,12 @@
+def temp():
+    #Ask type of conversion (°F,°C)
+    user= input("Write F if you want change to Fahranheit else write C if you want change to Celsius:")
+    if user== "f":
+        C= eval(input("Give me F:"))
+        Fahranheit= C*(9/5)+32
+        print("{0:.2f} Celsius equivalent to {1:.2f} F".format(C,Fahranheit))
+    else:
+        F= eval(input("Give me F:"))
+        Celsius= (F-32)*(5/9)
+        print("{0:.2f} Fahranheit equivalent to {1:.2f} C".format(F,Celsius))
+temp()
